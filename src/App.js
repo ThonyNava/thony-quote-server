@@ -48,7 +48,7 @@ function App() {
     <div className="container mt-4">
       <div className="jumbotron text-center mt-4 mb-0">
         <h1 className="display-4">Hello, Quotes World!</h1>
-        <p className="lead">Search for amazing inspirationl quotes!</p>
+        <p className="lead">Search for amazing inspirational quotes!</p>
         <p className="lead">
           <button className="btn btn-info btn-lg px-4" onClick={randomHandler}>
             Best Random Quote
