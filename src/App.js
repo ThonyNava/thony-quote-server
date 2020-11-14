@@ -23,7 +23,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (request) {
+    if (request !== "" || request !== "none") {
       fetch(request)
         .then((response) => {
           if (response.status >= 200 && response.status <= 299) {
@@ -35,6 +35,7 @@ function App() {
           }
         })
         .then((data) => {
+          // console.log(data);
           setRequest("none");
           setQuotesArr(data);
         })
